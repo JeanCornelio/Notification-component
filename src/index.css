@@ -1,0 +1,157 @@
+@font-face {
+  font-family: principalfont;
+  src: url(assets/fonts/PlusJakartaSans-VariableFont_wght.ttf);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  font-family: principalfont;
+  margin: 0;
+  font-size: 16px;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(210, 12%, 94%);
+}
+
+.notification_cont {
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 10px;
+  padding: 25px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.notification_cont-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.notification_cont-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.notification_cont-title span {
+  background-color: hsl(219, 85%, 26%);
+  color: white;
+  font-weight: 500;
+  padding: 1px 9px 1px 9px;
+  font-size: 15px;
+  border-radius: 5px;
+}
+
+.notification_cont-title h1 {
+  font-weight: 800;
+  font-size: 20px;
+}
+
+.notification_header img{
+  width: 50px;
+  margin-right: 10px;
+}
+
+.notification_cont-btn {
+  border: 0;
+  font-size: 15px;
+  font-weight: 600;
+  color: hsl(219, 14%, 63%);
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.notification_cont-btn:hover {
+  color: hsl(219, 85%, 26%);
+}
+
+.notification {
+ /*  background-color: hsl(210, 60%, 98%); */
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+
+.is-active{
+  background-color: hsl(210, 60%, 98%);
+}
+
+
+
+.notification_body-description {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+}
+
+.notification_body strong:hover {
+  color: hsl(219, 85%, 26%);
+}
+
+.notification_cont-body {
+  padding: 20px 0px 10px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.dat-red {
+  display: none;
+  background-color: red;
+  width: 10px;
+  border-radius: 10px;
+  height: 10px;
+}
+
+.active{
+  display: block;
+}
